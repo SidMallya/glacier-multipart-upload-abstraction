@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amazon S3 Glacier Multipart Upload</title>
+</head>
+<body>
+
+<h1>Amazon S3 Glacier Multipart Upload</h1>
+
+<form action="NewGlacierUpload.php"  method="post">
+  Access Key*<br>
+  <input type="text" size="50" name="AccessKey">
+  <br>
+  <p></p>
+  Secret Access Key*<br>
+  <input type="text" size="50" name="SecretAccessKey">
+  <br>
+  <p></p>
+  Region*<br>
+  <input type="text" size="50" name="Region" placeholder="E.g. us-east-1"> 
+  <br>
+  <p></p>
+  Vault Name*<br>
+  <input type="text" size="50" name="VaultName">
+  <br>
+  <p></p>
+  File Path*<br>
+  <input type="text" size="50" name="FilePath" placeholder="E.g. C:\Users\user\Desktop\file.zip"> 
+  <br>
+  <p></p>
+  Archive Description<br>
+  <input type="text" size="50" name="ArchiveDescription" placeholder="Optional">
+  <br>
+  <p></p>
+  Part Size in MiB*<br>
+  <input type="text" size="50" name="PartSize" value="1">
+  <br>
+  <p></p>
+  Concurrency*<br>
+  <input type="text" size="50" name="Concurrency" value="1">
+  <br>
+  <p></p>
+  <input type="checkbox" name="ResumeOption" value="AutoResume" checked>Resume upload automatically in case of failure
+  <p></p>
+   <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
